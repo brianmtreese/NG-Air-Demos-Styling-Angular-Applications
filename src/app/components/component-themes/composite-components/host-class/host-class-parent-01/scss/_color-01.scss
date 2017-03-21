@@ -1,0 +1,14 @@
+@import '../../../../../../scss/root/colors';
+
+
+
+
+:host(.color--01) {
+    background: $g-root__color--secondary--01a;
+    
+    .title,
+    .description {
+        color: white;
+    }
+
+}

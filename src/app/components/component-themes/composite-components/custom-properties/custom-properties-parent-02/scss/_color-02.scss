@@ -1,0 +1,17 @@
+@import '../../../../../../scss/root/colors';
+@import '../../../../../../scss/utilities/theme-colors';
+
+
+
+
+:host(.color--02) {
+    $colors: (
+        host__background: $g-root__color--secondary--04b,
+        content__color:   white
+    );
+
+    @include theme__colors(appCustomPropertiesParent--02, $colors);
+
+    @import '../../custom-properties-parent-01/scss/color-02';
+
+}

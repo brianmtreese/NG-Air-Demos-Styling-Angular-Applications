@@ -1,0 +1,9 @@
+@import '../../../../../../scss/typography/paragraphs';
+
+
+
+
+.description {
+    @include g-root__paragraph;
+    margin-bottom: 2em;
+}

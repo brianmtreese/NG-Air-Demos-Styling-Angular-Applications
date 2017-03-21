@@ -1,0 +1,15 @@
+@import '../../../../../../scss/root/colors';
+
+
+
+
+:host(.color--02),
+:host-context(app-host-context-parent-02.color--02) {
+    background: $g-root__color--secondary--04c;
+
+    .title,
+    .description {
+        color: inherit;
+    }
+
+}

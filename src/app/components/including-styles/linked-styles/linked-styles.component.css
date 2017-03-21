@@ -1,0 +1,10 @@
+:host {
+    background: red;
+    color: white;
+    display: block;
+    font-size: 2em;
+    padding: 1em;
+}
+
+/*@import 'stylesheet-01.css';*/
+/*@import 'stylesheet-02.css';*/

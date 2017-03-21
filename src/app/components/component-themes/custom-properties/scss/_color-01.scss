@@ -1,0 +1,53 @@
+@import '../../../../scss/root/colors';
+@import '../../../../scss/utilities/theme-colors';
+
+
+
+
+$message__background:           var(--appCustomProperties__message__background);
+$message__color:                var(--appCustomProperties__message__color, white);
+$item__border:                  var(--appCustomProperties__item__border, #999);
+$itemTitle__color:              var(--appCustomProperties__itemTitle__color, #666);
+$itemDescription__color:        var(--appCustomProperties__itemDescription__color, #666);
+$itemButton__background:        var(--appCustomProperties__itemButton__background, #{$g-root__color--primary--02a});
+$itemButton__background--hover: var(--appCustomProperties__itemButton__background--hover, #{$g-root__color--primary--02b});
+$itemThumbnail__background--01: var(--appCustomProperties__itemButton__thumbnail--01, #{$g-root__color--secondary--02a});
+$itemThumbnail__background--02: var(--appCustomProperties__itemButton__thumbnail--02, #{$g-root__color--secondary--03a});
+
+
+
+
+// Success
+// _________________________________________________________________________________________
+:host(.state--01) {
+    $color: $g-root__color--secondary--02a;
+
+    $colors: (
+        message__background:    $color,
+        item__border:           $color,
+        itemTitle__color:       $color,
+        itemButton__background: $color
+    );
+
+    @include theme__colors(appCustomProperties, $colors);
+
+}
+
+
+
+
+// Error
+// _________________________________________________________________________________________
+:host(.state--02) {
+    $color: red;
+
+    $colors: (
+        message__background:    $color,
+        item__border:           $color,
+        itemTitle__color:       $color,
+        itemButton__background: $color
+    );
+
+    @include theme__colors(appCustomProperties, $colors);
+
+}

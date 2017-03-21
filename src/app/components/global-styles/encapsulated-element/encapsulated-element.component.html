@@ -1,0 +1,16 @@
+<ul>
+    <li *ngFor="let item of items, let i = index">
+        <div>
+            <img 
+                src="/assets/images/{{item.image}}" 
+                alt="{{item.title}}" />
+        </div>
+        <div>
+            <h3>{{item.title}}</h3> 
+            <p>
+                {{item.message}}
+            </p> 
+            <a>Learn More</a> 
+        </div>
+    </li>
+</ul>

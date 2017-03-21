@@ -1,0 +1,11 @@
+@import '../../../../../../scss/typography/paragraphs';
+@import 'color-01';
+
+
+
+
+.description {
+    @include g-root__paragraph;
+    color: $content__color;
+    margin-bottom: 2em;
+}

@@ -1,0 +1,42 @@
+$spacing--xAxis: 2em;
+$spacing--yAxis: 2em;
+
+
+
+
+// Grid Container
+// _________________________________________________________________________________________
+.g-layout__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($spacing--xAxis / 2);
+    margin-right: -($spacing--xAxis / 2);
+}
+
+
+
+
+// Grid Items
+// _________________________________________________________________________________________
+$widths: (
+    '01': 8.333333333%,
+    '02': 16.666666667%,
+    '03': 25%,
+    '04': 33.333333333%,
+    '05': 41.666666667%,
+    '06': 50%,
+    '07': 58.333333333%,
+    '08': 66.666666667%,
+    '09': 75%,
+    '10': 83.333333333%,
+    '11': 91.666666667%,
+    '12': 100%
+);
+
+@each $prop, $width in $widths {
+    .g-layout__grid__item--#{$prop} {
+        flex: 1 calc(#{$width} - 1em);
+        margin: 0 ($spacing--xAxis / 2) $spacing--yAxis;
+        max-width: calc(#{$width} - #{$spacing--xAxis});
+    }
+}

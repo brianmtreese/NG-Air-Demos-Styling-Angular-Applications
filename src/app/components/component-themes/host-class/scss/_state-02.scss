@@ -1,0 +1,24 @@
+:host(.state--02) {
+    display: flex;
+
+    .message {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.25em;
+        margin-right: 1em;
+        max-width: 10em;
+        min-width: 10em;
+        padding: 1em;
+        text-align: center;
+
+        &__icon {
+            margin-bottom: 1em;
+            max-height: 2em;
+            min-height: 2em;
+            width: 2em;
+        }
+
+    }
+
+}

@@ -1,0 +1,22 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-encapsulated-bem',
+  templateUrl: './encapsulated-bem.component.html',
+  styleUrls: ['./encapsulated-bem.component.scss']
+//   styleUrls: ['./scss/_globals.scss', './scss/_items.scss', './scss/_layout-01.scss', './scss/_layout-02.scss', './scss/_state-01.scss', './scss/_state-02.scss', './scss/_color-01.scss', './scss/_color-02.scss']
+})
+export class EncapsulatedBemComponent {
+    items = [
+        {
+          title: 'Component Themes',
+          message: 'Focus on creating components that have multiple themes and we explore some different ways that we can apply them. First we explicitly set the theme per instance by adding classes and properties to components and we explore what that this SCSS/CSS would look like. We then look at providing context aware themes for components that will...',
+          image: 'knife.png'
+        },
+        {
+          title: 'Styles in Angular',
+          message: 'A dive into how styles work in Angular 2.0+. We cover how the different view encapsulation modes work, what they mean as far as the compiled code and scope, and why we may want to use each of them. We then move into the different ways that we can add styles to components, how Angular handles them, and how their priority flows through. After...',
+          image: 'beaker.png'
+        }
+    ];
+}

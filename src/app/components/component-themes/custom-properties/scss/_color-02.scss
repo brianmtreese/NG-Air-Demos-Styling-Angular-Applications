@@ -1,0 +1,53 @@
+@import '../../../../scss/root/colors';
+@import '../../../../scss/utilities/theme-colors';
+
+
+
+
+
+$colors: (
+    item__border:                  rgba(white, 0.75),
+    itemTitle__color:              white,
+    itemDescription__color:        white,
+    itemButton__background:        rgba(white, 0.3),
+    itemButton__background--hover: rgba(white, 0.5),
+    itemThumbnail__background--01: rgba(white, 0.3),
+    itemThumbnail__background--02: rgba(white, 0.3)
+);
+
+@include theme__colors(appCustomProperties, $colors);
+
+
+
+
+
+// Success
+// _________________________________________________________________________________________
+:host(.state--01) {
+
+    $colors: (
+        message__background:    rgba(white, 0.3),
+        item__border:           white,
+        itemButton__background: rgba(white, 0.3)
+    );
+
+    @include theme__colors(appCustomProperties, $colors);
+
+}
+
+
+
+
+// Error
+// _________________________________________________________________________________________
+:host(.state--02) {
+    
+    $colors: (
+        message__background:    rgba(white, 0.3),
+        item__border:           white,
+        itemButton__background: rgba(white, 0.3)
+    );
+
+    @include theme__colors(appCustomProperties, $colors);
+
+}

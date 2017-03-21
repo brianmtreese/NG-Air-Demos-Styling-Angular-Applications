@@ -1,0 +1,14 @@
+@import 'color-01';
+
+
+
+
+.message {
+    background: $message__background;
+    color: $message__color;
+
+    &__icon {
+        fill: currentColor;
+    }
+
+}

@@ -1,0 +1,97 @@
+@import '../../../../scss/root/colors';
+
+
+
+
+:host(.color--01) {
+
+    // Message
+    .message {
+        color: white;
+
+        &__icon {
+            fill: currentColor;
+        }
+
+    }
+
+    // Items
+    .item {
+        border-color: #999;
+
+        &__button {
+            background: $g-root__color--primary--02a;
+
+            &:hover {
+                background: $g-root__color--primary--02b;
+            }
+
+        }
+        
+    }
+
+    // First Item
+    .item:first-child .item__thumbnail {
+        background: $g-root__color--secondary--02a;
+    }
+
+    // Last Item
+    .item:last-child .item__thumbnail {
+        background: $g-root__color--secondary--03a;
+    }
+
+}
+
+
+
+
+// Success
+// _________________________________________________________________________________________
+:host(.color--01.state--01) {
+    $color: $g-root__color--secondary--02a;
+
+    .message {
+        background: $color;
+    }
+
+    .item {
+        border-color: $color;
+
+        &__title {
+            color: $color;
+        }
+
+        &__button {
+            background: $color;
+        }
+
+    }
+
+}
+
+
+
+
+// Error
+// _________________________________________________________________________________________
+:host(.color--01.state--02) {
+    $color: red;
+
+    .message {
+        background: $color;
+    }
+
+    .item {
+        border-color: $color;
+
+        &__title {
+            color: $color;
+        }
+
+        &__button {
+            background: $color;
+        }
+
+    } 
+
+}

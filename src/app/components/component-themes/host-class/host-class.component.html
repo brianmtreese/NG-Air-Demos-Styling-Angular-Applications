@@ -1,0 +1,39 @@
+<div class="message">
+    <svg
+      *ngIf="isState01" 
+      class="message__icon" 
+      viewBox="0 0 22 22">
+        <path d="M20.5,5.9l-2.4-2.4l-10,10.2L3.8,8.4l-2.3,2.4L8,18.5"/>
+    </svg>
+    <svg 
+      *ngIf="isState02"
+      class="message__icon" 
+      viewBox="0 0 22 22">
+        <path d="M18.5,16.4L13.1,11l5.4-5.4l-2.1-2.1L11,8.9L5.6,3.5L3.5,5.6L8.9,11l-5.4,5.4l2.1,2.1l5.4-5.4l5.4,5.4L18.5,16.4z"/>
+    </svg>
+    <template [ngIf]="isState01">
+      This is a successful state!
+    </template>
+    <template [ngIf]="isState02">
+      This is an error state!
+    </template>
+</div>
+<ul class="items">
+    <li 
+        *ngFor="let item of items, let i = index"
+        class="item">
+        <div class="item__thumbnail">
+            <img 
+                src="/assets/images/{{item.image}}" 
+                alt="{{item.title}}"
+                class="item__image" />
+        </div>
+        <div class="item__content">
+            <h3 class="item__title">{{item.title}}</h3> 
+            <p class="item__description">
+                {{item.message}}
+            </p> 
+            <a class="item__button">Learn More</a> 
+        </div>
+    </li>
+</ul>

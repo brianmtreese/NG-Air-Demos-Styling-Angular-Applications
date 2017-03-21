@@ -1,0 +1,84 @@
+@import '../../../../scss/root/colors';
+
+
+
+
+:host-context(.color--02) {
+
+    // Message
+    .message {
+        color: white;
+
+        &__icon {
+            fill: currentColor;
+        }
+
+    }
+
+    // Items
+    .item {
+        border-color: rgba(white, 0.75);
+        color: white;
+
+        &__thumbnail {
+            background: rgba(white, 0.3);
+        }
+
+        &__button {
+            background: rgba(white, 0.3);
+
+            &:hover {
+                background: rgba(white, 0.5);
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+// Success
+// _________________________________________________________________________________________
+:host(.color--02.state--01) {
+    $color: rgba(white, 0.3);
+
+    .message {
+        background: $color;
+    }
+
+    .item {
+        border-color: white;
+
+        &__button {
+            background: $color;
+        }
+
+    }
+
+}
+
+
+
+
+// Error
+// _________________________________________________________________________________________
+:host(.color--02.state--02) {
+    $color: rgba(white, 0.3);
+
+    .message {
+        background: $color;
+    }
+
+    .item {
+        border-color: white;
+
+        &__button {
+            background: $color;
+        }
+
+    } 
+
+}

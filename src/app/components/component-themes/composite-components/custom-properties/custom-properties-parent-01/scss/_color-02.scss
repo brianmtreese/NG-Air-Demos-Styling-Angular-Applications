@@ -1,0 +1,12 @@
+@import '../../../../../../scss/root/colors';
+@import '../../../../../../scss/utilities/theme-colors';
+
+
+
+
+$colors: (
+    host__background: $g-root__color--secondary--04c,
+    content__color:   #666
+);
+
+@include theme__colors(appCustomPropertiesParent--01, $colors);

@@ -1,0 +1,5 @@
+@mixin theme__colors($prefix, $colors) {
+  @each $property, $value in $colors {
+    #{'--' + $prefix + '__' + $property}: $value
+  }
+}

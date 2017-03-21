@@ -1,0 +1,10 @@
+@import '../../../../../../scss/root/colors';
+
+
+
+$host__background: var(--appCustomPropertiesParent--02__host__background, $g-root__color--secondary--01b);
+$content__color:   var(--appCustomPropertiesParent--02__content__color, white);
+
+:host:not(.color--02) {
+    @import '../../../../custom-properties/scss/color-02';
+}

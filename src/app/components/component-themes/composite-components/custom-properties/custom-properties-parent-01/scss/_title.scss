@@ -1,0 +1,10 @@
+@import '../../../../../../scss/typography/headers';
+@import 'color-01';
+
+
+
+
+.title {
+    @include g-root__h2;
+    color: $content__color;
+}

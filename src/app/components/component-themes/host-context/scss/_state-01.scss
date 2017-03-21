@@ -1,0 +1,17 @@
+:host(.state--01) {
+
+    .message {
+        font-size: 1.5em;
+        margin-bottom: 0.8em;
+        padding: 1em;
+
+        &__icon {
+            height: 1em;
+            margin-right: 0.5em;
+            max-width: 1.2em;
+            min-width: 1.2em;
+        }
+
+    }
+
+}

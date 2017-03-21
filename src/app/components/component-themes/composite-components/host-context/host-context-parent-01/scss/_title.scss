@@ -1,0 +1,8 @@
+@import '../../../../../../scss/typography/headers';
+
+
+
+
+.title {
+    @include g-root__h2;
+}
