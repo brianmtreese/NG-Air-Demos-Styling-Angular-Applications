@@ -1,3 +1,6 @@
+/*@import 'stylesheet-01.css';*/
+/*@import 'stylesheet-02.css';*/
+
 :host {
     background: red;
     color: white;
@@ -5,6 +8,3 @@
     font-size: 2em;
     padding: 1em;
 }
-
-/*@import 'stylesheet-01.css';*/
-/*@import 'stylesheet-02.css';*/

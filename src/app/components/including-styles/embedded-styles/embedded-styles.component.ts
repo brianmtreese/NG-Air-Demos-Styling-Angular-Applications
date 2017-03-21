@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-embedded-styles',
   template: `
-    <style></style>
+    <!--<style></style>-->
     <div>
       These styles are embedded within in this component without an external stylesheet.
     </div>

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-encapsulated-bem',
   templateUrl: './encapsulated-bem.component.html',
   styleUrls: ['./encapsulated-bem.component.scss']
-//   styleUrls: ['./scss/_globals.scss', './scss/_items.scss', './scss/_layout-01.scss', './scss/_layout-02.scss', './scss/_state-01.scss', './scss/_state-02.scss', './scss/_color-01.scss', './scss/_color-02.scss']
+  // styleUrls: ['./scss/_globals.scss', './scss/_items.scss']
 })
 export class EncapsulatedBemComponent {
     items = [

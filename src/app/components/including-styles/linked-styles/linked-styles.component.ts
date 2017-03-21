@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
     </div>
   `,
   styleUrls: ['./linked-styles.component.css']
+  // styleUrls: ['./linked-styles.component.css', './stylesheet-01.css']
 })
 export class LinkedStylesComponent {
 }
